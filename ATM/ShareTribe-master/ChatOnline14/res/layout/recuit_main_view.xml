@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/recuit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    <include layout="@layout/recuit_main_head" />
+    
+</LinearLayout>
+    <!-- HorizontalScrollView有了它，可以实现左右的滚动，但它的下面只能放一个布局或一个控件 -->
+    <HorizontalScrollView
+        android:id="@+id/rehorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/retab_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+           
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/repager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

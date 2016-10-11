@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip" >
+
+        <include layout="@layout/recommend_title" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/rec_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="姓      名:" />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/edit_text"
+                android:hint="请填写被推荐人的名字" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="毕业年份:" />
+
+            <EditText
+                android:id="@+id/txt_time"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/edit_text"
+                android:hint="如：2017届" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="推荐理由:" />
+
+    <EditText
+        android:id="@+id/txt_reason"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text"
+        android:gravity="fill_horizontal"
+        android:inputType="textMultiLine"
+        android:maxLines="26" >
+    </EditText>
+
+</LinearLayout>

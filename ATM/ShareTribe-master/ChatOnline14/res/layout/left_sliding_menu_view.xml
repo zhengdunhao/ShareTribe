@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BCD9B"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <ImageView
+            android:id="@+id/btn_headimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/btn_headimage_i" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/function_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:layout_weight="1" 
+                android:contentDescription="@string/desc"
+                android:src="@drawable/btn_settings_i" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btn_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:layout_weight="1" 
+                android:contentDescription="@string/desc"
+                android:src="@drawable/btn_personal_i" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btn_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:layout_weight="1" 
+                android:contentDescription="@string/desc"
+                android:src="@drawable/btn_msg_i" >
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_gravity="center"
+        android:orientation="horizontal" 
+        android:rowCount="5"
+        android:columnCount="2">
+            <ImageView
+          android:id="@+id/btn_bbs_iv"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_bbs_i"
+                android:contentDescription="@string/desc" >
+            </ImageView>
+            <TextView
+                android:id="@+id/btn_bbs"
+        		android:layout_gravity="center"
+                android:text="论    坛"
+                android:textColor="#FFFAFA"
+                android:textSize="30sp" >
+            </TextView>
+            <ImageView
+                android:id="@+id/btn_chat_iv"
+                android:src="@drawable/btn_chat_i"
+                android:contentDescription="@string/desc" >
+            </ImageView>
+            <TextView
+                android:id="@+id/btn_chat"
+        		android:layout_gravity="center"
+                android:text="聊    天"
+                android:textColor="#FFFAFA"
+                android:textSize="30sp" >
+            </TextView>
+            <ImageView
+                android:id="@+id/btn_recuit_iv"
+                android:src="@drawable/btn_recuit_i"
+                android:contentDescription="@string/desc" >
+            </ImageView>
+            <TextView
+                android:id="@+id/btn_recuit"
+        		android:layout_gravity="center"
+                android:text="招    聘"
+                android:textColor="#FFFAFA"
+                android:textSize="30sp" >
+            </TextView>
+            <ImageView
+                android:id="@+id/btn_exit_iv"
+                android:src="@drawable/btn_exit_i" 
+                android:contentDescription="@string/desc"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/btn_exit"
+        android:layout_gravity="center"
+                android:text="退    出"
+                android:textColor="#FFFAFA"
+                android:textSize="30sp" >
+            </TextView>
+        
+            <ImageView
+                android:id="@+id/btn_exit_iv1"
+                android:src="@drawable/btn_exit_i" 
+                android:contentDescription="@string/desc">
+            </ImageView>
+            <TextView
+                android:id="@+id/btn_exit1"
+        android:layout_gravity="center"
+                android:text="退    出"
+                android:textColor="#FFFAFA"
+                android:textSize="30sp" >
+            </TextView>
+    </GridLayout>
+
+</LinearLayout>

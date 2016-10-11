@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--从屏幕下边进入  
+android:duration_设置时间
+android:fromYDelta_从y轴开始_100%p屏幕正下方
+android:toYDelta_到y轴结束_0%p屏幕正中间
+android:interpolator_动画运动的方
+-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1800"
+    android:fromYDelta="100%p"
+    android:toYDelta="0%p"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+     />

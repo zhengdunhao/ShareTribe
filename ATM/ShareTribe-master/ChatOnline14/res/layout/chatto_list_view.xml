@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="6.0dip" 
+	android:paddingRight="6.0dip" 
+	android:orientation="vertical" >
+	
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+	<TextView 
+		android:id="@+id/chat_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		/>
+	
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		 <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1.0" />
+	<TextView
+		android:id="@+id/chat_content" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/black"
+		android:maxWidth="220dp"
+		android:background="@drawable/chatto_bg_normal"/>
+	<com.atm.chatonline.bbs.commom.CircleImageView
+		android:id="@+id/chat_head_pic"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:contentDescription="@string/head_img"/>
+	
+	</LinearLayout>
+	</LinearLayout>
+	
+
+</LinearLayout>

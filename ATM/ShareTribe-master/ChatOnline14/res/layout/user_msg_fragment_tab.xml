@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="2dip"
+            android:paddingTop="5dip" >
+
+            <Button
+                android:id="@+id/single_chat_back"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_onback" />
+
+            <TextView 
+                android:layout_toRightOf="@id/single_chat_back"
+                android:layout_toEndOf="@id/single_chat_back"
+                android:id="@+id/indicator_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+                android:text="@string/title_user_msg"/>
+            
+            <Button android:id="@+id/usermsg_btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:background="@color/duty_green"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                />
+                
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.atm.chatonline.usermsg.ui.TitleIndicator
+        android:id="@+id/pagerindicator"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/indicator_shadow_layer"
+        app:footerColor="@color/tab_indicator_text_selected"
+        app:footerLineHeight="5.7dp"
+        app:footerTriangleHeight="3.0dp"
+        app:textColor="@drawable/tab_indicator_text"
+        app:textSizeNormal="@dimen/common_text_size_middle_2"
+        app:textSizeSelected="@dimen/common_text_size_middle_2" />
+
+    <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+    <com.atm.chatonline.usermsg.ui.ViewPagerCompat
+        android:id="@+id/pager_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

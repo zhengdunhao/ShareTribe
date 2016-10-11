@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_choose">
+    <TextView 
+        android:id="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="@string/tv_agree"/>
+    
+
+</LinearLayout>

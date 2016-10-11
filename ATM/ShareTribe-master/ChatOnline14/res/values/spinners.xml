@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 各个学校 -->
+    <string-array name="gd_school">
+     <item >广东金融学院</item>  
+    <item >广东工业大学</item>  
+    </string-array>
+    <!-- 各个学校的系别-->
+    <string-array name="jr_school_dept">
+        <item >互联网金融与信息工程系</item>
+        <item >金融系</item>
+    </string-array>
+    <string-array name="gy_school_dept">
+    	<item>工程系</item>
+    	<item >机电系</item>
+    </string-array>
+    <!-- 各个系别专业 -->
+    <string-array name="jr_it_major">
+    	<item>计算机科学与技术</item>
+    	<item >电子商务</item>
+    </string-array>
+     <string-array name="jr_ec_major">
+    	<item >财务分析</item>
+    	<item >金融营销</item>
+    </string-array>
+     <string-array name="gy_gc_major">
+    	<item >工程管理</item>
+    	<item>工程投资</item>
+    </string-array>
+     <string-array name="gy_jd_major">
+    	<item >电动机床</item>
+    	<item >电箱</item>
+    </string-array>
+    <string-array name="enter_time">
+    	<item>2008</item>
+    	<item >2009</item>
+    	<item>2010</item>
+    	<item >2011</item>
+    	<item>2012</item>
+    	<item >2013</item>
+    	<item>2014</item>
+    	<item >2015</item>
+    	</string-array>
+</resources>
