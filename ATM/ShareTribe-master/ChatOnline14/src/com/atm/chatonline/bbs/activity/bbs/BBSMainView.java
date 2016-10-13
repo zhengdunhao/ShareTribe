@@ -73,7 +73,7 @@ public class BBSMainView extends BaseActivity implements OnClickListener {
 	private ImageView imgViewMore, imgViewEdit, imgViewSearch;
 	private TextView textView;
 	private View view01;
-	private static View view02;
+	private View view02;
 	private long mExitTime;
 	private View view03;
 	private User user;
@@ -119,7 +119,7 @@ public class BBSMainView extends BaseActivity implements OnClickListener {
 	//标题栏，是有搜索，编辑的最上面的那一栏,bbs、recuit的标题栏都不一样
 	private LinearLayout bbsTitle,recuitTitle;
 	
-	public static View getView02() {
+	public View getView02() {
 		return view02;
 	}
 
