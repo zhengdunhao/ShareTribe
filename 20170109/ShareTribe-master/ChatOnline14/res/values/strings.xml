@@ -1,0 +1,107 @@
+<resources>
+
+    <string name="app_name">ShareTribe</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_agree">
+        \t尊敬的用户，欢迎您注册成为ATM软件的用户。在注册前请您仔细阅读如下服务条款：\n\t
+        本服务协议双方为本软件与本软件用户，本服务协议具有合同效力。
+        你确认本服务协议后，本服务协议在您和本软件之间产生法律效力。请您务必在注册之前认真阅读全部服务协议内容，如有
+        疑问，可向客服咨询
+    </string>
+    
+	<string name="copy_label">&#x00A9;atm</string>
+	<string name="username">请输入用户名</string>
+	<string name="password">请输入密码</string>
+	<string name="error_login">无法登录？</string>
+	<string name="register">注册</string>
+	<string name="desc">!</string>
+	<string name="login_popup_password">忘记密码</string>
+	<string name="login_popup_username">找回账号</string>
+	<string name="login_popup_exit">取	消</string>
+	<string name="forget_password_desc">请输入您的注册邮箱</string>
+	<string name="forget_password_pwd">账	户：</string>
+	<string name="appeal">申诉</string>
+	<string name="submit">确	定</string>
+	<string name="find_username_desc">请输入您的注册邮箱</string>
+	<string name="find_username_email">邮        箱：</string>
+	<string name="head_img">headImg</string>
+	<string name="user_name">wo</string>
+	<string name="personal_message">personalmessage</string>
+	<string name="emjio">表情</string>
+	<string name="sendpic">发送图片</string>
+	
+	<string name="title1">苹果在中国市场：Google的劣势反而是苹果的优势</string>
+    <string name="title2">吞噬大数据存储领域新机制——NoSQL模式解析</string>
+
+<string name="share_content">ShareSDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK</string>
+	
+	<string name="share">分享</string>
+	<string name="not_yet_authorized">尚未授权</string>
+		<string name="get_user_info_sw">获取新浪微博授权用户资料</string>
+	<string name="get_user_info_tc">获取腾讯微博授权用户资料</string>
+	<string name="get_user_info_rr">获取人人网授权用户资料</string>
+	<string name="get_user_info_qz">获取QQ空间授权用户资料</string>
+	<string name="sinaweibo">新浪微博</string>
+	<string name="tencentweibo">腾讯微博</string>
+	<string name="renren">人人网</string>
+	<string name="qzone">QQ空间</string>	
+	<string name="get_my_info">获取授权用户资料</string>
+	<string name="get_other_info">获取其他用户资料</string>
+	<string name="share_desc">分享到第三方app的imageview描述</string>
+	<string name="share_timeline">微信朋友圈</string>
+	<string name="share_friend">微信朋友</string>
+	
+	
+	<!-- 分享用的字符串 -->
+	<string name="recuit_title">招聘</string>
+	<string name="recuit_content">ShareTribe招聘功能旨在为校友提供一个可靠的、便捷的找实习或功左的分享平台，在校生或已毕业的校友可以发布招聘信息</string>
+	<string name="apply_title">求职</string>
+	<string name="apply_content">ShareTribe求职功能旨在为广大的校友提供另一个可靠的、便捷的求职平台，在校生或还没找到工作的校友可以发布求职信息</string>
+	
+	
+	
+	<!-- usermessage string ，回复我的包含在评论当中 -->
+	<string name="title_user_msg">我的消息</string>
+	
+	<string name="apply_msg_str">评	论</string>
+	<string name="reply_msg_str">\@	 我</string>
+	<string name="system_msg_str">通	  知</string>
+	
+	
+	
+	<!-- basicmessage text -->
+	<string name="basic_message_email">邮箱</string>
+	<string name="basic_message_dept">系别</string>
+	<string name="basic_message_major">专业</string>
+	<string name="basic_message_school">学校</string>
+	<string name="basic_message_phone">联系方式</string>
+	<string name="basic_message_job">职位</string>
+    <string name="basic_message_sex">性别</string>
+    <string name="basic_message_name">姓名</string>
+    <string name="basic_message_nickname">昵称</string>
+    <string name="basic_message_note">签名</string>
+    <string name="basic_message_note_hint">您还没有设置签名(200个字以内)</string>
+    <string name="basic_message_line_desc">底部线条</string>
+    <string name="basic_message_edit">编辑</string>
+    
+    <string name="user_center">个人中心</string>
+    
+    <!-- 我的帖子 text -->
+    <string name="mybbs_publish_note">发布</string>
+    <string name="mybbs_relate_note">相关</string>
+    <string name="mybbs_collect_note">收藏</string>
+    
+    <!-- 我的消息的string -->
+    <string name="replymsg_test_text">\@刘琴依\：来看看这个帖子很有用\>\>\n这是一个跳转链接</string>
+    <string name="applymsg_test_text">评论：这条帖子很有趣，快过来看看看看看看快过来看看看看看看快过来看看看看看看快过来看看看看看看快过来看看看看看看</string>
+    <string name="replymsg_reply_mark_text">\@</string>
+    <string name="replymsg_reply_colon_text">\:</string>
+    <string name="replymsg_replied_nickname_text">刘琴依昵称的昵称的昵称</string>
+    <string name="replymsg_reply_content_text">来看看这个帖子很有用很有用很有用很有用</string>
+    
+    <string name="usermsg_title_text">删除</string>
+    
+    <string name="basic_message_hint">您还没有设置签名（200字以内）</string>
+    
+    <string name="text_setting">设        置</string>
+</resources>

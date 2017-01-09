@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name = "type" >
+   		<item >提问</item >
+        <item >分享</item >
+        <item >讨论</item >
+    </string-array >
+    
+    <string-array name = "description1" >
+        <item >#(exp1)</item >
+   		<item >#(exp2)</item >
+        <item >#(exp3)</item >
+        <item >#(exp4)</item >
+        <item >#(exp5)</item >
+   		<item >#(exp6)</item >
+        <item >#(exp7)</item >
+        <item >#(exp8)</item >
+        <item >#(exp9)</item >
+   		<item >#(exp10)</item >
+        <item >#(exp11)</item >
+        <item >#(exp12)</item >
+        <item >#(exp13)</item >
+        <item >#(exp14)</item >
+        <item >#(exp15)</item >
+        <item >#(exp16)</item >
+        <item >#(exp17)</item >
+        <item >#(exp19)</item >
+        <item >#(exp20)</item >
+        <item >#(exp21)</item >
+    </string-array >
+    
+    <string-array name = "description2" >
+        <item >#(exp22)</item >
+        <item >#(exp23)</item >
+        <item >#(exp24)</item >
+        <item >#(exp25)</item >
+        <item >#(exp26)</item >
+        <item >#(exp27)</item >
+        <item >#(exp28)</item >
+        <item >#(exp29)</item >
+        <item >#(exp30)</item >
+        <item >#(exp31)</item >
+        <item >#(exp32)</item >
+        <item >#(exp33)</item >
+    </string-array >
+    <string-array name="sp_recuit_head">
+        <item >全部</item >
+   		<item >实习</item >
+        <item >兼职</item >
+        <item >全职</item >
+    </string-array>
+    <string-array name="work">
+        <item >招聘</item >
+   		<item >求职</item >
+    </string-array>
+    <string-array name="worktype">
+        <item >全职</item >
+   		<item >兼职</item >
+   		<item >实习</item >
+    </string-array>
+</resources>

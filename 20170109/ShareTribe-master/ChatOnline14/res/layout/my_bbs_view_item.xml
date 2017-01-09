@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="3dp"
+    android:paddingBottom="5dp"
+   	android:orientation="vertical">
+   <!-- 	<ImageView 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="1dp"
+   	    android:background="@color/black"/> -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="5dp"
+        >
+        <TextView 
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cc5555"
+            android:text="标签1"
+            />
+        <TextView 
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/label1"
+            android:textColor="#4cc455"
+            android:text="标签2"
+            />
+        <TextView 
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/label2"
+            android:textColor="#8cc455"
+            android:text="标签2"
+            />
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       android:paddingLeft="14dp"
+       android:paddingRight="5dp"
+       android:paddingTop="8dp"
+       android:orientation="vertical">
+       
+       
+       <TextView 
+           android:id="@+id/note_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:text="【分享帖子】注意注意这是一个帖子"/>
+       <TextView 
+           android:id="@+id/note_content"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="#666666"
+           android:textSize="14sp"
+           android:text=""/>
+   </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        >
+        
+        
+        <LinearLayout 
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            >
+             <ImageView
+            android:id="@+id/dianzan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dianzan" />
+            <TextView 
+            android:id="@+id/zanNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="1dp"
+            android:text="10"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+            <ImageView
+            android:id="@+id/comments"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/comments" />
+            
+             <TextView 
+            android:id="@+id/comNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="1dp"
+            android:text="20"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/linear"
+            android:orientation="vertical"
+            >
+          
+            <TextView 
+            android:id="@+id/note_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="1dp"
+            android:text="10月10日  24时59分"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+        </LinearLayout>
+    </RelativeLayout>
+	<!-- <ImageView 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="1dp"
+   	    android:layout_marginTop="10dp"
+   	    android:background="@color/black"/> -->
+</LinearLayout>

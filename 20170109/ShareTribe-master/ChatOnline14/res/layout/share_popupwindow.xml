@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/share_layout" >
+    <LinearLayout 
+        android:id="@+id/ly_share_pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:gravity="center_horizontal"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/share_pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/ly_share_pop_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        
+         <LinearLayout 
+            android:id="@+id/ly_share_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            >
+            
+            <ImageView 
+            android:id="@+id/share_friend_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/friend_img"
+            android:contentDescription="@string/share_desc"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_friend"
+                android:typeface="monospace"
+                android:textSize="12sp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/ly_share_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            >
+            
+            <ImageView 
+            android:id="@+id/share_timeline_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/timeline_img"
+            android:contentDescription="@string/share_desc"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_timeline"
+                android:typeface="monospace"
+                android:textSize="12sp"
+                />
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

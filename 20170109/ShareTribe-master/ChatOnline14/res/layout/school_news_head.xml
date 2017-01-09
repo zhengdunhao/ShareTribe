@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+bbs_main_head.xml是用来布局主界面的标题栏，就是最上面的一栏
+如果说每个模块的最上面那一栏是相同的话，那么每个xxx_main_view.xml文件就可以直接导入这个文件
+但是如聊天模块最上面那一栏就没有编辑图标，所以这问题有待解决，或者在弄多几个xxx_main_head.xml
+
+2015/7/30  郑
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/title_bar_style" >
+
+    <FrameLayout
+        android:id="@+id/top_head_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <!--
+        标题栏左上角有个圈圈的图案，点击可以左侧拉，而且还加载多个xml文件 
+        图标的大小由/res/values/dimens.xml/head_size来决定大小
+        android:background="@drawable/bg_head"在图标后面放了一张白色的圆图案，不过暂时用不到
+        android:padding="1.0dip"是与白色图暗相离，其实就是填充
+        -->
+
+        <ImageView
+            android:id="@+id/imgView_person_center"
+            android:layout_width="@dimen/head_size"
+            android:layout_height="@dimen/head_size"
+            android:layout_gravity="center_vertical"
+            
+            
+            android:src="@drawable/more"
+            android:scaleType="fitXY" />
+
+        <!--
+    这里的TextView控件是标题栏左边imgView_more头像的右上角上有个消息圈，记录消息的次数
+    一开始怎么改都没有发现，原来被android:visibility给隐藏了
+        -->
+
+        <TextView
+            android:id="@+id/top_left_count"
+            style="@style/top_update_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-17.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/top_head_container"
+            android:background="@drawable/badge_titlebar"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!--
+    这里表示的是标题栏的右边搜索的头像，点击显示右侧栏 
+    android:layout_alignParentRight="true"有了这句话，搜索头像就可以和父控件右靠齐
+    android:layout_marginRight="10.0dip"与右边相隔一定的距离
+    -->
+
+    <ImageView
+        android:id="@+id/imgView_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/invite" />
+
+    <!--
+    这里的TextView控件是标题栏右边双人头像的右上角有个消息圈，记录消息的次数
+    一开始怎么改都没有发现，原来被android:visibility给隐藏了 
+    
+    android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"以上两句表示右上角
+    -->
+
+    <TextView
+        android:id="@+id/top_right_count"
+        style="@style/top_update_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/badge_titlebar"
+        android:visibility="gone" />
+
+    <!-- 这个讲的是标题：今日头条摆放，其中android:layout_centerInParent="true"使得文字在父窗口的位置居中 -->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/green"
+    android:paddingTop="5dip"
+    android:paddingLeft="10dip"
+    android:paddingBottom="5dip"
+    android:paddingRight="10dip">
+    
+    <Button 
+        android:id="@+id/user_center_btn_back"
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_onback"
+        />
+	<!-- <Button 
+	    android:id="@+id/btn_edit_title_bar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:textColor="@color/white"
+	   	android:background="#4000EE00"
+	   	android:paddingLeft="5dp"
+	   	android:paddingRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+	    android:textSize="14sp"
+	    android:text="编辑"
+	    />    -->
+	 <ImageButton 
+	    android:id="@+id/btn_edit_title_bar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:tag="@string/basic_message_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="5dp"
+	   	android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:background="@color/duty_green"
+        android:src="@drawable/basicmessage_edit_icon"
+	    /> 
+</RelativeLayout>

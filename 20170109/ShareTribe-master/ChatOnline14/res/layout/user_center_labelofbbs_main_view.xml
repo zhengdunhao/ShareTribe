@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/user_center_labelofbbs_titlebar"/>
+    <TextView 
+        android:id="@+id/textview_wait"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="正在加载，请稍等"/>
+  
+    <TextView 
+        android:id="@+id/load_failed_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:text="数据加载失败！"/>
+    
+   
+ <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_center_labelofbbs_lv"
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:cacheColorHint="#00000000"  
+    	android:divider="#00000000"
+        android:fadingEdge="none"  
+        android:fastScrollEnabled="false"  
+        android:footerDividersEnabled="false"  
+        android:headerDividersEnabled="false"  
+        android:smoothScrollbar="true"
+        ptr:ptrMode="both"
+        ptr:ptrDrawable="@drawable/refresh" 
+		ptr:ptrAnimationStyle="rotate" 
+		ptr:ptrHeaderTextColor="#fffef9"  
+
+    >
+
+</com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

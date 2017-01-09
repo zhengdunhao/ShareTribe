@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33cc66">
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:src="@drawable/btn_onback"        
+            android:layout_centerVertical="true">        
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="举报" 
+            android:textSize="22sp"
+            android:textColor="#ffffff"/>
+
+	</RelativeLayout>
+
+	<TextView
+	    android:id="@+id/tv_reason"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="17sp"
+	    android:text="你举报该贴的原因是：" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="10dp"/>
+
+	<CheckBox
+	    android:id="@+id/cb_sex"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="色情" 
+	    android:layout_marginLeft="10dp"/>
+
+	<CheckBox
+	    android:id="@+id/cb_ad"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="广告" 
+	    android:layout_marginLeft="10dp"/>
+
+	<CheckBox
+	    android:id="@+id/cb_against"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="反动" 
+	    android:layout_marginLeft="10dp"/>
+
+	<CheckBox
+	    android:id="@+id/cb_head"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="头像" 
+	    android:layout_marginLeft="10dp"/>
+	
+	<CheckBox
+	    android:id="@+id/cb_other"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="其他原因" 
+	    android:layout_marginLeft="10dp"/>
+	
+	<EditText
+	    android:id="@+id/et_other"
+	    android:layout_width="fill_parent"
+	    android:layout_height="120dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:gravity="fill_horizontal"
+	    android:background="@drawable/post_content_bg"
+	    android:enabled="false"
+	    android:inputType="textMultiLine"
+	    android:minLines="3"
+	    />
+
+	<Button
+	    android:id="@+id/btn_commit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#33cc66"
+	    android:textColor="#ffffff"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="5dp"
+	    android:text="提交"
+	     />
+	
+</LinearLayout>

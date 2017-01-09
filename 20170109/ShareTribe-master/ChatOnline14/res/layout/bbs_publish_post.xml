@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33cc66" >
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_onback" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/spinner_bg"
+            android:entries="@array/type" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/post_title_bg"
+            android:hint="标题(不超过30字)"
+            android:ems="30"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:maxLines="1" >
+            
+        </EditText>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:maxLines="26"
+        android:gravity="fill_horizontal"
+        android:background="@drawable/post_content_bg"
+        android:hint="正文">
+    </EditText>
+
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/album"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:src="@drawable/picture" />
+
+        <ImageView
+            android:id="@+id/expression"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:src="@drawable/expression" />
+
+        <ImageView
+            android:id="@+id/aite"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:src="@drawable/aite" />
+
+    </LinearLayout>
+    
+    <!-- 展示表情面板 -->
+    <LinearLayout
+        android:id="@+id/ll_expression"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:visibility="gone" >
+
+       <android.support.v4.view.ViewPager
+            android:id="@+id/exp_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:persistentDrawingCache="animation" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:visibility="gone"
+         >
+       
+        <!-- 95dip -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"   
+            android:layout_marginRight="5dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/gv_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" 
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="none"
+                    />
+            </LinearLayout>
+        
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include android:layout_width="match_parent"
+         android:layout_height="45dip"
+         layout="@layout/only_back_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dip" >
+         <TextView android:id="@+id/system_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="系统消息"
+        />
+     <TextView android:id="@+id/system_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/duty_white"
+        android:text="2016-02-09 00:02:33"
+       	android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+   
+     <TextView android:id="@+id/system_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_weight="30"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:textColor="@color/black"
+        android:text="ShareTribe通知您，您的账户在异地登录，请及时更换密码，避免财产损失。更换密码方式是直接在app中的账户安全中修改并更换，更换过程中可能需要用到您的邮箱或者是手机号码等"
+        />
+     
+     
+
+</LinearLayout>

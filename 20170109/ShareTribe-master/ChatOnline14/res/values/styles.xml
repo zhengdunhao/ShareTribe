@@ -1,0 +1,172 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="popup_anim_style">
+    	<item name="android:windowEnterAnimation">@anim/popup_fade_in</item>
+    	<item name="android:windowExitAnimation">@anim/popup_fade_out</item>
+    </style>
+    
+     <style name="popwindow_alpha_style">
+        <item name="android:windowEnterAnimation">@anim/popwindow_alpha_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_alpha_fade_out</item>
+    </style>
+     <style name="title_bar_style">
+        <item name="android:background">@drawable/bg_titlebar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+    </style>
+    
+     <style name="top_update_count">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">#ffcc3131</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">15.0dip</item>
+        <item name="android:width">15.0dip</item>
+    </style>
+    
+     
+     <style name="SmallTextSizeTheme">
+         <item name="android:textSize">8sp</item>
+     </style>
+     <style name="NormalTextSizeTheme">
+         <item name="android:textSize">15sp</item>
+     </style>
+     <style name="BigTextSizeTheme">
+         <item name="android:textSize">25sp</item>
+     </style>
+     
+    <style name="title_text_style">
+        <item name="android:textSize">20.0sp</item>
+        
+    </style>
+     <style name="radioButton">
+    	<item name="android:layout_width">fill_parent</item>//每一个的宽度
+    	<item name="android:layout_height">fill_parent</item>//高度
+    	<item name="android:layout_weight">1.0</item>//比重
+    	<item name="android:padding">10dp</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:button">@null</item>
+    	
+    	
+    </style>
+
+    <style name="group_friend_list_pic">
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+
+    <style name="group_friend_list_name">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+    </style>
+    
+    <style name="more_choose_list_name">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+
+    <style name="TitleStyle" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#33cc66</item>
+    </style>
+    
+     <style name="SearchGroupActivityTheme">
+        <item name="android:windowAnimationStyle">@style/SearchGroupWindowAnimTheme</item>
+    </style>
+    
+    <style name="SearchGroupWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_right</item>
+    </style>
+    
+     <style name="CreateGroupActivityTheme">
+        <item name="android:windowAnimationStyle">@style/CreateGroupWindowAnimTheme</item>
+    </style>
+    
+    <style name="CreateGroupWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_top</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_top</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_bottom</item>
+    </style>
+    
+    <style name="Transparent" parent="android:Theme.Light"> 
+        <!--将Activity的Theme设置成透明--> 
+        <item name="android:windowIsTranslucent">true</item> 
+    </style>
+    
+        <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item><!--对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+          <style name="AnimHead" parent="@android:style/Animation">
+        
+    </style>
+         <!-- 显示大图片 -->
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+     <!-- 我的消息的选项卡样式 -->
+     <style name="MyWidget" parent="@android:style/Theme" />
+    
+    <style name="MyWidget.TabText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/tab_indicator_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    
+    <style name="usermsg_checkbox_theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/usermsg_checkbox_selector</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+     <com.atm.chatonline.bbs.util.SlidingTitleLayout 
+        android:id="@+id/slidingtitlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.atm.chatonline.bbs.util.SlidingTitleLayout>
+
+    <com.atm.chatonline.schoolnews.util.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_news_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_images_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_image_slide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="vertical" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/image_slide_page"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dip"
+                        android:focusable="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_title_text"
+                        style="@style/Transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="#55000000" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_bar_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/image_page_bg" >
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvSlideTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textSize="13dip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_circle_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_divider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/divider_horizontal_line"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+              
+            </LinearLayout>
+        </LinearLayout>
+    </com.atm.chatonline.schoolnews.util.ScrollViewExtend>
+      <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView
+                        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/lv_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/chat_bg_01"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:smoothScrollbar="true"
+                        ptr:ptrAnimationStyle="rotate"
+                        ptr:ptrDrawable="@drawable/refresh"
+                        ptr:ptrHeaderTextColor="#fffef9"
+                        ptr:ptrMode="both" 
+                        >
+                    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+                </LinearLayout>
+
+</LinearLayout>

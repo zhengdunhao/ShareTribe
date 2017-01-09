@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 这里定义的是标题栏左边的人头像，<shape>标签定义了形状，其中oval表示圆形
+solid表示圆形边 -->
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1.0px" android:color="#ffa50303" />
+    <solid android:color="#ffffffff" />
+</shape>

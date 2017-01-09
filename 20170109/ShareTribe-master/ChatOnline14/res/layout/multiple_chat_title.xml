@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/green"
+	android:paddingTop="5dip"
+	android:paddingBottom="5dip"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip" >
+	<Button 
+		android:id="@+id/single_chat_back"
+		android:layout_width="20dip"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:background="@drawable/btn_onback"/>
+	<TextView 
+		android:id="@+id/group_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="25sp"
+		android:textColor="@color/white"
+		/>
+	<ImageButton 
+		android:id="@+id/personal_message"
+		android:layout_width="28dip"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:contentDescription="@string/personal_message"
+		android:background="@drawable/btn_groupchat_look_group_data"/>
+	
+
+</RelativeLayout>

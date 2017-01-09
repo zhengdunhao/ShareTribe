@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/linearlayout_of_mylabel"
+    android:orientation="vertical" >
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/my_label_listview_title_bar"/>
+    <ProgressBar 
+        android:id="@+id/my_label_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"/>
+    <TextView 
+        android:id="@+id/my_label_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/duty_black"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:text="您还没有关注标签哦！赶紧关注下面的标签吧！"/>
+    <com.atm.chatonline.usercenter.view.FlowLayout 
+        android:id="@+id/flow_layout_view"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        
+    </com.atm.chatonline.usercenter.view.FlowLayout>
+    
+    <ListView
+        android:id="@+id/my_label_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/duty_black"
+        android:visibility="gone"
+        android:dividerHeight="0.5dp"
+		android:background="@color/white"
+        />
+    
+	
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#98FB98" />
+    <!--
+    修改按钮
+  设置圆角
+  注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角
+  topLeftRadius是右上角topRightRadius是左上角
+    -->
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+	
+</shape>

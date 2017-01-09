@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.studentsystem01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <include 
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/user_center_title_bar"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/basic_message_darkgray"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+        <LinearLayout 
+            android:id="@+id/layout_head_img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:orientation="horizontal"
+           	android:padding="2dp"
+           	
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:text="头像"/>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right"> 
+                <com.atm.chatonline.bbs.commom.CircleImageView 
+                android:id="@+id/basic_message_headimg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
+                android:clickable="false"
+                app:border_color="#92DDED"
+                app:border_width="2dp"
+                /></LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+         <LinearLayout 
+            android:id="@+id/layout_motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_below="@id/layout_head_img"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="签名"/>
+            <EditText 
+                android:id="@+id/basic_message_motto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:text="chjskbhjkbachjdksabchdjskacbdhsjkacbdhsjkacbdhsjkcabdhsjakcbdhsjkacbdhsjkbchdsjkcbhdsjkcb"/>
+        </LinearLayout>
+                          <LinearLayout 
+            android:id="@+id/layout_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_motto"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="昵称"/>
+            <EditText 
+                android:id="@+id/basic_message_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:background="@color/white"
+                 android:textColor="@color/black"
+                 android:enabled="false"
+                android:text="老醋"/>
+        </LinearLayout>
+ 
+          <LinearLayout 
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_nickname"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="姓名"/>
+            <TextView 
+                android:id="@+id/basic_message_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                android:text="陈创业"/>
+        </LinearLayout>
+        
+          
+           <LinearLayout 
+            android:id="@+id/layout_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+           android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_name"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="性别"/>
+            <TextView 
+                android:id="@+id/basic_message_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                android:text="男"
+                />
+        </LinearLayout>
+        
+           
+            <LinearLayout 
+            android:id="@+id/layout_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+          	android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_sex"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="职称"/>
+            <EditText 
+                android:id="@+id/basic_message_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:text="社长" />
+        </LinearLayout>
+        
+             <LinearLayout 
+            android:id="@+id/layout_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_job"
+            android:orientation="horizontal"
+            >
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="院系"/>
+            <TextView 
+                android:id="@+id/basic_message_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="互联网金融与信息工程系"/>
+        </LinearLayout>
+        
+              <LinearLayout 
+            android:id="@+id/layout_major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_dept"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="专业"/>
+            <TextView 
+                android:id="@+id/basic_message_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="计算机科学与技术专业"/>
+        </LinearLayout>
+        
+               
+      
+        
+                <LinearLayout 
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_only_circle_corner"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_major"
+            android:orientation="horizontal"
+            >
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="邮箱"/>
+            <TextView 
+                android:id="@+id/basic_message_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="acdcadsc@qq.com"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

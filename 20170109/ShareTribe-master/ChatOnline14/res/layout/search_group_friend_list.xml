@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <include
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        layout="@layout/only_back_title" />
+           <com.atm.chatonline.chat.util.ClearEditText
+        android:id="@+id/search_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="搜索用户"
+        
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15.0dip" />
+    <ListView 
+        android:id="@+id/search_group_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
+    
+
+</LinearLayout>

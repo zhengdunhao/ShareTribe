@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/lab_type"
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:background="#B4EEB4"
+        android:visibility="gone"
+        >
+          <TextView 
+              android:id="@+id/tv_type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true" 
+              android:text="   最新贴"
+              android:visibility="gone"
+              />
+          <TextView 
+              android:id="@+id/tv_more"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true" 
+              android:text="更多 > "
+              android:visibility="gone"
+              />
+        
+    </RelativeLayout>
+    <!-- 
+    <TextView 
+        android:id="@+id/tv_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="   最新贴"
+        android:background="#B4EEB4"
+        />
+        -->
+        <!-- android:visibility="gone" -->
+        
+    
+    <RelativeLayout 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fffffb"
+    android:orientation="vertical" >
+
+    <com.atm.chatonline.bbs.commom.CircleImageView
+        android:id="@+id/headImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/iv_bbsitem_headimage" />
+
+    <TextView
+        android:id="@+id/publishID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/headImage"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/headImage"
+        android:textColor="@color/black"
+        android:text="本群最帅" />
+
+    <TextView
+        android:id="@+id/publishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/publishID"
+        android:layout_below="@id/publishID"
+        android:text="3分钟前"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/headImage"
+        android:layout_below="@id/headImage"
+        android:textSize="16dip"
+        android:textColor="@color/black"
+        android:text="崔始源将在电视剧《她很漂亮》拍摄后入伍" />
+
+    <TextView
+        android:id="@+id/someContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:textSize="14dip"
+        android:text="韩国男子组合Super Junior成员崔始源将在电视剧《她很漂亮》拍摄后入伍，或成为组合里第七名入伍的成员。"
+        android:textColor="#666666" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/publishID"
+        android:layout_marginRight="12dp" >
+
+        <ImageView
+            android:id="@+id/dianzan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/dianzan" />
+
+        <TextView
+            android:id="@+id/clickGoodNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="180"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:id="@+id/comments"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/comments" />
+
+        <TextView
+            android:id="@+id/replynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="1368"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/someContent"
+        android:layout_below="@id/someContent" 
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/labName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dp"
+ 		    android:textColor="#fffffb"
+            android:text="" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/labName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+ 		    android:layout_marginBottom="10dp"
+ 		    android:textColor="#fffffb"
+            android:text=""
+            android:visibility="invisible" />
+        
+        <TextView
+            android:id="@+id/labName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+ 		    android:layout_marginBottom="10dp"
+ 		    android:textColor="#fffffb"
+            android:text="" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+</LinearLayout>

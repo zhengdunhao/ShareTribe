@@ -1,0 +1,274 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentsystem01"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    <uses-sdk
+       android:minSdkVersion="14" 
+         />
+<!-- SDCard中创建与删除文件权限 -->  
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+ <!-- 向SDCard写入数据权限 -->  
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    <!-- 暂时把主界面设为BBSMainView -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pic_software"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity 
+            android:name="com.atm.chatonline.bbs.activity.login.GuideActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+                </intent-filter>
+            </activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.RegisterTeacherView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.RegisterStudentView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.RegisterAgreementView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.RegisterChooseView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.ForgetPassword"
+                android:screenOrientation="portrait" 
+                android:theme="@android:style/Theme.NoTitleBar"></activity>
+             <activity android:name="com.atm.chatonline.bbs.activity.login.FindUsername"
+                android:screenOrientation="portrait" 
+                android:theme="@android:style/Theme.NoTitleBar"></activity>
+               <activity android:name="com.atm.chatonline.bbs.activity.login.UpDatePassword"
+                android:screenOrientation="portrait" 
+                android:theme="@android:style/Theme.NoTitleBar"></activity> 
+             <activity android:name="com.atm.chatonline.bbs.activity.login.UserAppeal"
+                android:screenOrientation="portrait" 
+                android:theme="@android:style/Theme.NoTitleBar"></activity> 
+                <activity android:name="com.atm.chatonline.bbs.activity.login.ImgExample"
+                android:screenOrientation="portrait" 
+                android:theme="@android:style/Theme.NoTitleBar"></activity> 
+                
+                
+            <activity android:name="com.atm.chatonline.bbs.activity.mainview.MainView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.login.WelcomeView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSFindView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSDepartmentView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSPostDetailView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSChooseDepartmentView"
+                android:screenOrientation="portrait"></activity>
+             <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSChooseLabelView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSClickGoodListView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSCommentView"
+                android:screenOrientation="portrait"></activity>
+            <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSReportView"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSMainView"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"></activity>
+                   <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSPublishPostView"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSListView"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.bbs.NavigationPublishPost"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.bbs.SearchUserView"
+                android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.bbs.activity.bbs.BBSSelectPhotosView"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.bbs.NavigationSearch"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.login.ConfirmGraduateStudent"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.login.ConfirmInternalStudent"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.login.ConfirmTeacher"
+                android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.atm.chatonline.bbs.activity.login.LoginView"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"></activity>
+               
+                 <activity android:name="com.atm.chatonline.chat.ui.AttentionActivity"
+                     android:screenOrientation="portrait"/>
+                 <activity android:name="com.atm.chatonline.chat.ui.FollowersActivity"
+                     android:screenOrientation="portrait"/>
+                <activity android:launchMode="singleTask" 
+                    android:name="com.atm.chatonline.chat.ui.ChatMainActivity"
+                    android:screenOrientation="portrait"/>
+                <activity  android:theme="@android:style/Theme.NoTitleBar" 
+                    android:name="com.atm.chatonline.chat.ui.CreateGroupActivity"
+                    android:screenOrientation="portrait"/>  
+                <activity android:launchMode="singleTask" 
+                    android:name="com.atm.chatonline.chat.ui.GroupListActivity"
+                    android:screenOrientation="portrait"/>
+                 <activity android:theme="@android:style/Theme.NoTitleBar" 
+                     android:name="com.atm.chatonline.chat.ui.GroupChatActivity"
+                     android:screenOrientation="portrait"/> 
+                  <activity android:theme="@android:style/Theme.NoTitleBar"
+                       android:name="com.atm.chatonline.chat.ui.GroupChatLookDataActivity"
+                       android:screenOrientation="portrait"/> 
+                <activity  android:launchMode="singleTask" 
+                    android:name="com.atm.chatonline.chat.ui.FriendListActivity"/>
+                <activity android:theme="@style/TitleStyle" 
+                    android:name="com.atm.chatonline.chat.ui.PersonalMessageActivity"
+                    android:screenOrientation="portrait"/> 
+                <activity android:launchMode="singleTask" android:theme="@android:style/Theme.NoTitleBar" 
+                    android:name="com.atm.chatonline.chat.ui.PersonChatActivity"
+                    android:screenOrientation="portrait"/>
+                <activity android:theme="@style/SearchGroupActivityTheme" 
+                    android:name="com.atm.chatonline.chat.ui.SearchActivity" 
+                    android:screenOrientation="portrait"/>
+                <activity android:name="com.atm.chatonline.chat.ui.SearchFriendListActivity"/>
+                 <activity android:name="com.atm.chatonline.chat.ui.SearchGroupListActivity"/>  
+                  
+                  <activity android:name="com.atm.chatonline.chat.ui.BaseActivity"/>   	
+                  <activity android:name="com.atm.chatonline.chat.ui.ChatAttentionActivity"/>   
+                  <activity android:name="com.atm.chatonline.chat.ui.ImageShower" 
+                      android:theme="@style/ImageScale"  ></activity>
+                  <activity android:launchMode="singleTask" 
+                    android:name="com.atm.chatonline.chat.ui.PeoplePublishedNote"
+                    android:screenOrientation="portrait"/>
+                   <activity android:launchMode="singleTask" 
+                    android:name="com.atm.chatonline.chat.ui.PeopleCollectedNote"
+                    android:screenOrientation="portrait"/>
+                  
+                     <activity android:name="com.atm.chatonline.usercenter.activity.usercenter.UserCenter"
+                     android:theme="@android:style/Theme.NoTitleBar"
+                     android:screenOrientation="portrait" android:launchMode="standard"></activity>
+                     <activity android:name="com.atm.chatonline.usercenter.activity.usercenter.BasicMessage"
+                     android:theme="@android:style/Theme.NoTitleBar"
+                     android:screenOrientation="portrait" android:launchMode="standard"></activity>
+                     <activity android:name="com.atm.chatonline.usercenter.activity.usercenter.MyBbs"
+                     android:theme="@android:style/Theme.NoTitleBar"
+                     android:screenOrientation="portrait"></activity>
+                     <activity android:name="com.atm.chatonline.usercenter.activity.usercenter.MyLabel"
+                     android:theme="@android:style/Theme.NoTitleBar"
+                     android:screenOrientation="portrait"></activity>
+                     <activity android:name="com.atm.chatonline.usercenter.activity.usercenter.LabelOfBBS"
+                     android:theme="@android:style/Theme.NoTitleBar"
+                     android:screenOrientation="portrait"></activity>
+                  
+                  
+                 <activity android:name="com.atm.charonline.recuit.ui.RecuitNavigationPublishPost"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitPostDetailView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.ApplyPostDetailView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitNavigationSearch"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitPublishPostView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitReportView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitListView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.ApplyListView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.charonline.recuit.ui.RecuitMainView"
+                      android:screenOrientation="portrait"></activity>
+                  
+                  
+                  
+                  <activity android:name="com.atm.chatonline.schoolnews.ui.SchoolNewsActivity"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.schoolnews.ui.NewsDetailActivity"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.schoolnews.ui.RecommendActivity"
+                      android:screenOrientation="portrait"></activity>
+                  
+            
+                  <activity android:name="com.atm.chatonline.setting.ui.SettingView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.AccountSafe"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.ChangePassword"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.ChangeEmail"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.SettingFont"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.FeedbackView"
+                      android:screenOrientation="portrait"></activity>
+                  <activity android:name="com.atm.chatonline.setting.ui.AboutUsView"
+                      android:screenOrientation="portrait"></activity>
+                  
+                   <activity 
+                       android:name=".wxapi.WXEntryActivity"
+                       android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                       android:configChanges="keyboardHidden|orientation|screenSize"
+                       android:exported="true"
+                       android:screenOrientation="portrait"
+                       >
+                       
+                       </activity>
+                  
+                  <activity
+            android:name="cn.sharesdk.framework.AuthorizeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >          
+        </activity>
+        <activity android:name="com.yangyu.activity.AuthActivity" >
+        </activity>
+        <activity
+            android:name="cn.sharesdk.onekeyshare.ShareAllGird"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.sharesdk.onekeyshare.SharePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        
+        <activity android:name="com.atm.chatonline.usermsg.ui.MyMessageActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.atm.chatonline.usermsg.ui.ApplyMsg"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.atm.chatonline.usermsg.ui.SystemMsg"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.atm.chatonline.usermsg.ui.ReplyMsg"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.atm.chatonline.usermsg.ui.SystemMessageDetail"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait"></activity>
+        
+        
+     <!-- 防止搜索時軟鍵盤遮擋listView  -->            
+        <activity android:name=".Activity"
+android:windowSoftInputMode="adjustPan"  />
+        
+    </application>
+
+</manifest>

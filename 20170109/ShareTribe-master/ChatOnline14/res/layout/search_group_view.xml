@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/search_group"
+     >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        layout="@layout/only_back_title" />
+
+    
+    <!-- 搜索框，ClearEditText 带有清除功能，即按叉叉图片，会清楚搜索框的内容
+    android:imeOptions="actionSearch"点击搜索框，搜索框会出现搜索按钮
+     -->
+    <com.atm.chatonline.chat.util.ClearEditText
+        android:id="@+id/search_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15.0dip" />
+
+    
+
+       <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chat_edit"
+            android:orientation="horizontal"
+            
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp" 
+            android:paddingLeft="1dp">
+           
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+       
+    </android.support.v4.view.ViewPager> -->
+
+        
+    
+
+</LinearLayout>

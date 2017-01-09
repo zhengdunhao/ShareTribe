@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_note_select"
+    android:orientation="horizontal">
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_weight="4">
+	    <RelativeLayout 
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:background="@drawable/bg_note_select"
+    android:orientation="vertical" >
+
+    <com.atm.chatonline.bbs.commom.CircleImageView
+        android:id="@+id/note_headImage"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/iv_bbsitem_headimage" />
+
+    <TextView
+        android:id="@+id/note_publishID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/note_headImage"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/note_headImage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:text="本群最帅" />
+
+    <TextView
+        android:id="@+id/note_publishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/note_publishID"
+        android:layout_below="@id/note_publishID"
+        android:textSize="10sp"
+        android:text="3分钟前"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/note_headImage"
+        android:layout_below="@id/note_headImage"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="崔始源将在电视剧《她很漂亮》拍摄后入伍" />
+
+    <TextView
+        android:id="@+id/note_someContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/note_title"
+        android:layout_below="@id/note_title"
+        android:textSize="10sp"
+        android:text="韩国男子组合Super Junior成员崔始源将在电视剧《她很漂亮》拍摄后入伍，或成为组合里第七名入伍的成员。"
+        android:textColor="#666666" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/note_publishID"
+        android:layout_marginRight="12dp" >
+
+        <ImageView
+            android:id="@+id/note_dianzan"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/dianzan2" />
+
+        <TextView
+            android:id="@+id/note_clickGoodNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:text="180"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:id="@+id/comments"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/comment2" />
+
+        <TextView
+            android:id="@+id/note_replynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+			android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:text="1368"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/note_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/note_someContent"
+        android:layout_below="@id/note_someContent" 
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/note_labName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    		android:layout_marginBottom="6dp"
+ 		    android:textColor="#fffffb"
+ 		    android:textSize="12sp"
+            android:text="" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/note_labName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+ 		    android:layout_marginBottom="6dp"
+ 		    android:textColor="#fffffb"
+ 		    android:textSize="12sp"
+            android:text=""
+            android:visibility="invisible" />
+        
+        <TextView
+            android:id="@+id/note_labName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+ 		    android:layout_marginBottom="6dp"
+ 		    android:textColor="#fffffb"
+ 		    android:textSize="12sp"
+            android:text="" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_usercenter_note_line"
+        />
+	</LinearLayout>
+    
+</LinearLayout>
+

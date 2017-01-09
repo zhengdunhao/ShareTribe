@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>    
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout 
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fffffb"
+    android:orientation="vertical" >
+    
+  	  	<LinearLayout 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	>
+        
+        	<ImageView 
+        	    android:id="@+id/recuit_recuitType"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center"
+            	android:background="@drawable/btn_recuit"
+            	/>
+        	<RelativeLayout
+        		android:layout_width="0dip"
+        		android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	>
+            
+            	<TextView
+                	android:id="@+id/recuit_content"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentLeft="true"
+                	android:layout_alignParentTop="true"
+                	android:text="工作类型"
+                	android:textSize="12dp"
+                	/>
+            	<TextView 
+        	    	android:id="@+id/recuit_salary"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@id/recuit_content"
+        		    android:layout_alignLeft="@id/recuit_content" 
+        		    android:text="薪资"
+                	android:textSize="12dp"
+        		    />
+            
+        		<TextView 
+        	    	android:id="@+id/recuit_publishTime"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@id/recuit_content"
+        		    android:layout_alignRight="@id/recuit_content" 
+        		    android:text="时间"
+                	android:textSize="12dp"
+        		    />
+        		
+        	</RelativeLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>
